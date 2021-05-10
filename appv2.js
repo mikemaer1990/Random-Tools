@@ -65,7 +65,7 @@ const getLocation = async () => {
 
 const getWeather = async (location) => {
     const request = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=87fd74d91a204d6abd943807210605&q=${location}&days=2&aqi=yes&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=87fd74d91a204d6abd943807210605&q=${location}&days=2&aqi=yes&alerts=no`
     );
     const data = await request.json();
     return data;
